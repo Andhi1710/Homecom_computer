@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Homecom Computer</title>
+
+  <style>
+    .hamburger-line{
+      @apply w-[30px] h-[2px] my-2 block bg-white;
+    }
+
+    .navbar-fixed{
+      @apply fixed z-[9999] bg-slate-900/90 backdrop-blur-md shadow-lg;
+    }
+
+    .hero-bg{
+      background:
+      radial-gradient(circle at top left,#14b8a6 0%,transparent 30%),
+      radial-gradient(circle at bottom right,#0f766e 0%,transparent 35%),
+      #020617;
+    }
+
+    .card-hover{
+      transition: .4s;
+    }
+
+    .card-hover:hover{
+      transform: translateY(-10px);
+    }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-white overflow-x-hidden">
+
+<!-- HEADER -->
+<header class="absolute top-0 left-0 w-full flex items-center z-50">
+  <div class="container mx-auto px-6">
+    <div class="flex items-center justify-between relative">
+
+      <!-- Logo -->
+      <div class="py-6">
+        <a href="#home" class="text-3xl font-black text-teal-400 tracking-wide">
+          HOMECOM
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="flex items-center px-4">
+        <button id="hamburger" class="block absolute right-4 lg:hidden">
+          <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+          <span class="hamburger-line transition duration-300 ease-in-out"></span>
+          <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+        </button>
+
+        <!-- Navbar -->
+        <nav id="nav-menu"
+          class="hidden absolute py-5 bg-slate-900 shadow-2xl rounded-2xl max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none">
+
+          <ul class="block lg:flex">
+
+            <li class="group">
+              <a href="#home"
+                class="text-base text-white py-2 mx-8 flex hover:text-teal-400 transition">
+                Home
+              </a>
+            </li>
+
+            <li class="group">
+              <a href="#services"
+                class="text-base text-white py-2 mx-8 flex hover:text-teal-400 transition">
+                Services
+              </a>
+            </li>
+
+            <li class="group">
+              <a href="#portfolio"
+                class="text-base text-white py-2 mx-8 flex hover:text-teal-400 transition">
+                Portfolio
+              </a>
+            </li>
+
+            <li class="group">
+              <a href="#about"
+                class="text-base text-white py-2 mx-8 flex hover:text-teal-400 transition">
+                About
+              </a>
+            </li>
+
+           <li class="group">
+  <a href="#maps"
+    class="text-base text-white py-2 mx-8 flex hover:text-teal-400 transition">
+    Maps
+  </a>
+</li>
+
+          </ul>
+
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- HEADER END -->
+
+
+
+<!-- HERO -->
+<section id="home" class="pt-36 pb-28 hero-bg">
+
+  <div class="container mx-auto px-6">
+
+    <div class="flex flex-wrap items-center">
+
+      <!-- Left -->
+      <div class="w-full lg:w-1/2">
+
+        <h1 class="text-teal-400 font-bold text-xl mb-3">
+          Solusi Teknologi Modern
+        </h1>
+
+        <h2 class="text-5xl lg:text-7xl font-black leading-tight mb-6">
+          HOMECOM
+          <span class="block text-white">
+            COMPUTER
+          </span>
+        </h2>
+
+        <p class="text-slate-300 text-lg leading-relaxed mb-10 max-w-xl">
+          Jasa Service Laptop, Rakit PC, CCTV, Website,
+          Networking, Hotspot, dan Solusi IT Profesional
+          untuk Rumah, Sekolah, Kantor, Cafe dan Pesantren.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+
+          <a href="https://wa.me/6285179602715"
+            target="_blank"
+            class="bg-teal-500 hover:bg-teal-400 text-white font-bold py-4 px-8 rounded-full transition duration-300 shadow-2xl">
+
+            Hubungi Kami
+
+          </a>
+<a href="https://www.youtube.com/@homecomcomputer" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"> <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg> </a> <!-- Instagram --> <a href="https://www.instagram.com/homecom_computer" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"> <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg> </a> <!-- Twitter --> </a> <!--LinkedIn --> <a href="https://www.linkedin.com/in/andhi-hamzah" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"> <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> </a>
+          <a href="#services"
+            class="border border-teal-400 hover:bg-teal-500 text-white font-bold py-4 px-8 rounded-full transition duration-300">
+
+            Layanan
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Right -->
+      <div class="w-full lg:w-1/2 mt-16 lg:mt-0">
+
+        <div class="relative">
+
+          <img
+            src="dist/img/homecom-banner.png"
+            alt="Homecom"
+            class="w-full animate-bounce">
+
+          <div class="absolute -z-10 top-10 left-10 w-72 h-72 bg-teal-500 blur-[120px] opacity-30 rounded-full"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- HERO END -->
+
+
+
+<!-- SERVICES -->
+<section id="services" class="py-28 bg-slate-900">
+
+  <div class="container mx-auto px-6">
+
+    <div class="text-center mb-20">
+
+      <h4 class="text-teal-400 font-bold text-lg mb-3">
+        Layanan Kami
+      </h4>
+
+      <h2 class="text-4xl lg:text-5xl font-black">
+        HOME<span class="text-teal-400">COM</span> SERVICES
+      </h2>
+
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- CARD -->
+      <div class="bg-slate-800 p-8 rounded-3xl card-hover border border-slate-700">
+
+        <div class="text-5xl mb-5">💻</div>
+
+        <h3 class="text-2xl font-bold mb-4">
+          Service Laptop
+        </h3>
+
+        <p class="text-slate-400">
+          Install ulang, ganti LCD, keyboard,
+          upgrade RAM SSD dan service motherboard.
+        </p>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="bg-slate-800 p-8 rounded-3xl card-hover border border-slate-700">
+
+        <div class="text-5xl mb-5">🌐</div>
+
+        <h3 class="text-2xl font-bold mb-4">
+          Website
+        </h3>
+
+        <p class="text-slate-400">
+          Jasa pembuatan website sekolah,
+          bisnis, company profile dan landing page.
+        </p>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="bg-slate-800 p-8 rounded-3xl card-hover border border-slate-700">
+
+        <div class="text-5xl mb-5">📡</div>
+
+        <h3 class="text-2xl font-bold mb-4">
+          Hotspot & Wifi
+        </h3>
+
+        <p class="text-slate-400">
+          Instalasi jaringan internet,
+          hotspot Mikrotik dan manajemen bandwidth.
+        </p>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="bg-slate-800 p-8 rounded-3xl card-hover border border-slate-700">
+
+        <div class="text-5xl mb-5">📷</div>
+
+        <h3 class="text-2xl font-bold mb-4">
+          CCTV
+        </h3>
+
+        <p class="text-slate-400">
+          Pemasangan CCTV rumah,
+          sekolah, kantor dan tempat usaha.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- SERVICES END -->
+
+
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="py-28 bg-slate-950">
+
+  <div class="container mx-auto px-6">
+
+    <div class="text-center mb-20">
+
+      <h4 class="text-teal-400 font-bold text-lg mb-3">
+        Portfolio
+      </h4>
+
+      <h2 class="text-4xl lg:text-5xl font-black">
+        Project Terbaru
+      </h2>
+
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div class="overflow-hidden rounded-3xl bg-slate-900 border border-slate-800 card-hover">
+
+        <img src="dist/img/portfolio/Rakit.png" class="w-full">
+
+        <div class="p-6">
+
+          <h3 class="text-2xl font-bold mb-3">
+            Rakit / Upgrade PC
+          </h3>
+
+          <p class="text-slate-400">
+            Mengatasi Komputer Bermasalah ataupun Mau Upgrade
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="overflow-hidden rounded-3xl bg-slate-900 border border-slate-800 card-hover">
+
+        <img src="dist/img/portfolio/service.png" class="w-full">
+
+        <div class="p-6">
+
+          <h3 class="text-2xl font-bold mb-3">
+            Service Laptop
+          </h3>
+
+          <p class="text-slate-400">
+            Upgrade RAM dan SSD untuk meningkatkan performa laptop.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="overflow-hidden rounded-3xl bg-slate-900 border border-slate-800 card-hover">
+
+        <img src="dist/img/portfolio/antar.png" class="w-full">
+
+        <div class="p-6">
+
+          <h3 class="text-2xl font-bold mb-3">
+           Service Antar - Jemput
+          </h3>
+
+          <p class="text-slate-400">
+           Jika anda Kendala dalam Pengantaran Kami siap Membantu
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- PORTFOLIO END -->
+
+
+
+<!-- ABOUT -->
+<section id="about" class="py-28 bg-slate-900">
+
+  <div class="container mx-auto px-6">
+
+    <div class="flex flex-wrap items-center">
+
+      <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
+
+        <img src="dist/img/andhi.png" class="rounded-3xl shadow-2xl">
+
+      </div>
+
+      <div class="w-full lg:w-1/2 lg:pl-16">
+
+        <h4 class="text-teal-400 font-bold text-lg mb-3">
+          Tentang Kami
+        </h4>
+
+        <h2 class="text-4xl font-black mb-6">
+          Teknisi Profesional &
+          Solusi IT Terpercaya
+        </h2>
+
+        <p class="text-slate-400 leading-relaxed text-lg mb-8">
+          Homecom Computer hadir membantu kebutuhan teknologi Anda
+          mulai dari service laptop, networking, website,
+          server hingga instalasi CCTV dengan pelayanan cepat,
+          profesional dan bergaransi.
+        </p>
+
+        <div class="grid grid-cols-2 gap-6">
+
+          <div class="bg-slate-800 p-6 rounded-2xl">
+            <h3 class="text-3xl font-black text-teal-400">
+              100+
+            </h3>
+
+            <p class="text-slate-400">
+              Client Puas
+            </p>
+          </div>
+
+          <div class="bg-slate-800 p-6 rounded-2xl">
+            <h3 class="text-3xl font-black text-teal-400">
+              24/7
+            </h3>
+
+            <p class="text-slate-400">
+              Support
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ABOUT END -->
+
+<!-- CLIENTS START -->
+<section id="clients" class="pt-32 pb-32 bg-slate-900">
+
+  <div class="container mx-auto px-6">
+
+    <!-- Heading -->
+    <div class="text-center mb-20">
+
+      <h4 class="font-semibold text-lg text-teal-400 mb-3">
+        Clients
+      </h4>
+
+      <h2 class="font-black text-white text-3xl sm:text-4xl lg:text-5xl mb-4">
+        Yang Pernah Bekerjasama
+      </h2>
+
+      <p class="text-slate-400 max-w-2xl mx-auto">
+        Beberapa sekolah, perusahaan, UMKM, dan instansi
+        yang telah mempercayakan layanan teknologi kepada
+        Homecom Computer.
+      </p>
+
+    </div>
+
+    <!-- Clients Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+
+      <!-- ALBASSAM -->
+      <a href="https://albassam.sch.id"
+        target="_blank"
+        class="bg-slate-800 border border-slate-700 rounded-3xl p-6 flex items-center justify-center hover:border-teal-400 hover:-translate-y-2 transition duration-500 group">
+
+        <img
+          src="dist/img/clients/Logo.png"
+          alt="Al-Bassam"
+          class="max-h-20 grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition duration-500">
+
+      </a>
+
+      <!-- HIKARI -->
+      <a href="https://www.hikariinternasionalindonesia.com/"
+        target="_blank"
+        class="bg-slate-800 border border-slate-700 rounded-3xl p-6 flex items-center justify-center hover:border-teal-400 hover:-translate-y-2 transition duration-500 group">
+
+        <img
+          src="dist/img/clients/hikari.png"
+          alt="Hikari"
+          class="max-h-20 grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition duration-500">
+
+      </a>
+
+      <!-- DINAS -->
+      <a href="http://dpesdm.sukabumikab.go.id/"
+        target="_blank"
+        class="bg-slate-800 border border-slate-700 rounded-3xl p-6 flex items-center justify-center hover:border-teal-400 hover:-translate-y-2 transition duration-500 group">
+
+        <img
+          src="dist/img/clients/dinas.png"
+          alt="DPESDM"
+          class="max-h-20 grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition duration-500">
+
+      </a>
+
+      <!-- MANGCODING -->
+      <a href="https://mangcoding.com/"
+        target="_blank"
+        class="bg-slate-800 border border-slate-700 rounded-3xl p-6 flex items-center justify-center hover:border-teal-400 hover:-translate-y-2 transition duration-500 group">
+
+        <img
+          src="dist/img/clients/mangcoding.png"
+          alt="Mangcoding"
+          class="max-h-20 grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition duration-500">
+
+      </a>
+
+       <!-- NUMTECH.ID -->
+      <a href="https://numtech.id/"
+        target="_blank"
+        class="bg-slate-800 border border-slate-700 rounded-3xl p-6 flex items-center justify-center hover:border-teal-400 hover:-translate-y-2 transition duration-500 group">
+
+        <img
+          src="dist/img/clients/NuMTech-Logo.png"
+          alt="Numtech"
+          class="max-h-20 grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition duration-500">
+
+      </a>
+
+      <!-- AYAM BUNUT -->
+      <a href="https://ayambunut.com"
+        target="_blank"
+        class="bg-slate-800 border border-slate-700 rounded-3xl p-6 flex items-center justify-center hover:border-teal-400 hover:-translate-y-2 transition duration-500 group">
+
+        <img
+          src="dist/img/clients/ayambunut.jpg"
+          alt="Ayam Bunut"
+          class="max-h-20 grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition duration-500">
+
+      </a>
+
+       <!-- IDRA UTAMA SINERGI -->
+      <a href="#"
+        target="_blank"
+        class="bg-slate-800 border border-slate-700 rounded-3xl p-6 flex items-center justify-center hover:border-teal-400 hover:-translate-y-2 transition duration-500 group">
+
+        <img
+          src="dist/img/clients/idrautama.png"
+          alt="Idra Utama Sinergi"
+          class="max-h-20 grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition duration-500">
+
+      </a>
+
+        <!-- Adi Contruction -->
+      <a href="#"
+        target="_blank"
+        class="bg-slate-800 border border-slate-700 rounded-3xl p-6 flex items-center justify-center hover:border-teal-400 hover:-translate-y-2 transition duration-500 group">
+
+        <img
+          src="dist/img/clients/adicontruction.jpeg"
+          alt="Adi Contruction"
+          class="max-h-20 grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition duration-500">
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- CLIENTS END -->
+<!-- GOOGLE MAP -->
+<section id="maps" class="py-28 bg-slate-900">
+
+  <div class="container mx-auto px-6">
+
+    <div class="text-center mb-16">
+
+      <h4 class="text-teal-400 font-bold text-lg mb-3">
+        Lokasi Kami
+      </h4>
+
+      <h2 class="text-4xl lg:text-5xl font-black text-white">
+        HOMECOM COMPUTER
+      </h2>
+
+      <p class="text-slate-400 mt-4">
+        Cisaat, Sukabumi - Jawa Barat
+      </p>
+
+    </div>
+
+    <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-800">
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4889.329074198858!2d106.8977873758583!3d-6.893539493105568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4c85856499bc73fd%3A0xd231db71b9ee90a!2sHomecom%20Computer!5e1!3m2!1sid!2sid!4v1778902874064!5m2!1sid!2sid"
+        width="100%"
+        height="500"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- GOOGLE MAP END -->
+<!-- FOOTER -->
+<footer class="bg-black py-10 border-t border-slate-800">
+
+  <div class="container mx-auto px-6">
+
+    <div class="text-center">
+
+      <h2 class="text-3xl font-black text-teal-400 mb-3">
+        HOMECOM COMPUTER
+      </h2>
+
+      <p class="text-slate-400 mb-3">
+        Cisaat, Sukabumi
+      </p>
+
+      <p class="text-slate-400 mb-6">
+        WhatsApp : 085179602715
+      </p>
+
+      <p class="text-slate-600 text-sm">
+        © 2026 Homecom Computer. All Rights Reserved.
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+<!-- FOOTER END -->
+
+
+
+<script>
+
+  // Hamburger
+  const hamburger = document.querySelector('#hamburger');
+  const navMenu = document.querySelector('#nav-menu');
+
+  hamburger.addEventListener('click', function(){
+    hamburger.classList.toggle('hamburger-active');
+    navMenu.classList.toggle('hidden');
+  });
+
+  // Navbar Fixed
+  window.onscroll = function(){
+    const header = document.querySelector('header');
+    const fixedNav = header.offsetTop;
+
+    if(window.pageYOffset > fixedNav){
+      header.classList.add('navbar-fixed');
+    } else{
+      header.classList.remove('navbar-fixed');
+    }
+  }
+
+</script>
+
+</body>
+</html>
